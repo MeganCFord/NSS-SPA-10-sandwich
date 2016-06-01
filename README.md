@@ -28,7 +28,7 @@ cd 10-sandwich
 open index.html
 ```
 
-[Live Site On Github]()
+[Live Site On Github](http://megancford.github.io/NSS-SPA-10-sandwich)
 
 
 ![screenshot](sandwich-screenshot.jpg)

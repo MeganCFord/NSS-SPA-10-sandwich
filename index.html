@@ -1,0 +1,121 @@
+<!-- 
+one HTML file that has:
+a section of options for each sandwich part
+the ability to select multiple, or zero, choices for each section (such as turkey and bacon, or "no meat")
+an empty DOM element into which the final sandwich order and its cost will be inserted
+ -->
+
+
+ <!DOCTYPE html>
+ <html>
+ <head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Sandwich Maker</title>
+   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+   <link rel= "stylesheet" href= "main.css">
+ </head>
+ <body>
+  <header>
+    <h3>Sandwich Maker</h3>
+  </header>
+   <!-- main form inputs -->
+   <form>
+   <!-- bread div -->
+   <div class="form-group" id= "breadSelects">
+    <h5>Bread</h5>
+    <label class="checkbox-inline">
+      <input class="uncheckable" type="checkbox" id = "wheat" value="wheat">Wheat
+    </label>
+    <label class= "checkbox-inline">
+      <input class="uncheckable" type="checkbox" id = "sourdough" value="sourdough">Sourdough
+    </label>
+    <label class= "checkbox-inline">
+      <input class="uncheckable" type="checkbox" id = "croissant" value="croissant">Croissant
+    </label>
+    <label class= "checkbox-inline">
+      <input class = "clear" type="checkbox" id = "noBread" class = "none" value="clear">No Bread
+    </label>
+   </div>
+   <!-- meat div -->
+   <div class="form-group" id = "meatSelects">
+    <h5>Meat</h5>
+    <label class = "checkbox-inline">
+      <input class="uncheckable" type="checkbox" id = "turkey" value="turkey">Turkey
+    </label>
+    <label class = "checkbox-inline">
+      <input class="uncheckable" type="checkbox" id = "chickenSalad" value="chickenSalad">Chicken Salad
+    </label>
+    <label class = "checkbox-inline">
+      <input class="uncheckable" type="checkbox" id = "ham" value="ham">Ham
+    </label>
+    <label class = "checkbox-inline">
+      <input  class= "clear" type="checkbox" id = "noMeat" class = "none" value="clear">No Meat
+    </label>
+   </div>
+   <!-- cheese div -->
+   <div class="form-group" id = "cheeseSelects">
+    <h5>Cheese</h5>
+    <label class = "checkbox-inline">
+      <input class="uncheckable" type= "checkbox" id= "cheddar" value = "cheddar">Cheddar
+    </label>
+    <label class = "checkbox-inline">
+      <input class="uncheckable" type= "checkbox" id= "pepperJack" value = "pepperJack">Pepper Jack
+    </label>
+    <label class = "checkbox-inline">
+      <input class="uncheckable" type= "checkbox" id= "pimento" value = "pimento">Pimento
+    </label>
+    <label class = "checkbox-inline">
+      <input class = "clear" type= "checkbox" id= "noCheese" class = "none" value = "clear">No Cheese
+    </label>
+   </div>
+   <!-- veggies div -->
+   <div class="form-group" id = "vegetableSelects">
+    <h5>Vegetables</h5>
+    <label class = "checkbox-inline">
+      <input class="uncheckable" type= "checkbox" id= "beanSprouts" value = "beanSprouts">Bean Sprouts
+    </label>
+    <label class = "checkbox-inline">
+      <input class="uncheckable" type= "checkbox" id= "tomatoes" value = "tomatoes">Tomatoes
+    </label>
+    <label class = "checkbox-inline">
+      <input class="uncheckable" type= "checkbox" id= "lettuce" value = "lettuce">Lettuce
+    </label>
+    <label class = "checkbox-inline">
+      <input class = "clear" type= "checkbox" id= "noVeggies" class = "none" value = "clear">No Veggies
+    </label>
+   </div>
+   <!-- condiments div -->
+   <div class="form-group" id = "condimentSelects">
+    <h5>Condiments</h5>
+    <label class = "checkbox-inline">
+      <input class="uncheckable" type= "checkbox" id= "mustard" value = "mustard">Mustard
+    </label>
+    <label class = "checkbox-inline">
+      <input class="uncheckable" type= "checkbox" id= "mayonaisse" value = "mayonaisse">Mayonaisse
+    </label>
+    <label class = "checkbox-inline">
+      <input class="uncheckable" type= "checkbox" id= "barbecueSauce" value = "barbecueSauce">Barbecue Sauce
+    </label>
+    <label class = "checkbox-inline">
+      <input class = "clear" type= "checkbox" id= "noCondiments" class="none" value = "clear">No Condiments
+    </label>
+   </div>
+   </form>
+
+    <!-- output div. -->
+   <div id = "finalOrder"> 
+
+   </div>
+
+ </body>
+ <!-- refactored to be less DRY but since original instructions were to have a separate IIFE for each ingredient set, these scripts still work with a small change to the DOM.js file. -->
+ <!-- <script src = "js/bread.js"></script> -->
+ <!-- <script src = "js/cheese.js"></script> -->
+ <!-- <script src = "js/condiments.js"></script> -->
+ <!-- <script src = "js/meat.js"></script> -->
+ <!-- <script src = "js/veggies.js"></script> -->
+ <script src = "js/sandwich.js"></script>
+ <script src = "js/ingredients.js"></script>
+ <script src = "js/dom.js"></script>
+ </html>
